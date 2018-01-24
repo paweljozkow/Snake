@@ -7,12 +7,12 @@ package pl.jozkow.Snake;
 
 public class GameController implements IController {
 
-	private GameModel model;
-	private GameView view;
+	private IModel model;
+	private IView view;
 
 	public GameController(IModel model, IView view) {
-		this.model = (GameModel) model;
-		this.view = (GameView) view;
+		this.model = model;
+		this.view = view;
 	}
 
 	@Override
